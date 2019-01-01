@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ANGULAR 5';
+  public descripcion="es un framework de javascript.";
 }
