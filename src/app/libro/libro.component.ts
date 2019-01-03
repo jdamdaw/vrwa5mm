@@ -15,7 +15,9 @@ export class LibroComponent{
     //public aleatorio=0;
 
     public colorAleatorio(){
-        return this.colores[Math.random()*(2-0)];
+    //    return Math.floor(Math.random()*this.colores.length);
+        return this.colores[Math.floor(Math.random()*this.colores.length)];
+    //    return this.colores[2]
     }
     
 }
