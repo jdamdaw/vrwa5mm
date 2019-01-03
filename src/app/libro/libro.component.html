@@ -1,2 +1,9 @@
 <h2>Nombre de libro: {{nombreLibro}}</h2>
 <h3>Descripción de libro: {{descripcion}}</h3>
+<p *ngFor="let color of colores">
+    <li [style.background]=colores[1] *ngIf="color==colores[1]">{{nombreLibro}}</li>
+</p>
+<br>
+<ul *ngFor="let licolores of colores">
+    <li [style.background]=licolores>{{licolores}}</li>
+</ul>

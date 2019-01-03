@@ -9,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class LibroComponent{
     public nombreLibro="me echaron droja en el cola cao";
     public descripcion="uno que salía en un vídeo";
-}
-/*
-export class LibroComponent implements OnInit {
-    
-    public nombreLibro="Nombre Libro: me echaron droja en el cola cao";
-    constructor() { }
-  
-    ngOnInit() {
+    public paraAdultos=true;
+    public colorParaAdultos="red";
+    public colores=["red","lime","purple"];
+    //public aleatorio=0;
+
+    public colorAleatorio(){
+        return this.colores[Math.random()*(2-0)];
     }
-  }
-  */
+    
+}
